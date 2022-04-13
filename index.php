@@ -1,7 +1,8 @@
 <?php
-$ph1 = img/ph-1.png
-$ph1 = img/ph-2.jpg;
-$ph1 = img/ph-3.jpeg;
+$title = 'Название';
+$pg1 = 'pages/1.php';
+$pg2 = 'pages/2.php';
+
 
 ?>
 <!doctype html>
@@ -11,13 +12,13 @@ $ph1 = img/ph-3.jpeg;
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title><?php echo $title ?></title>
 </head>
 <body>
-
-<?php
-echo 'Имя: ' . $name . '<br>Адрес: ' . $address . '<br>Возарст: ' . $age . '<br>Пол: ' . $gender;
-
-?>
+<h2><?php echo $title ?></h2>
+<ul>
+    <li><a href="<?php echo $pg1 ?>">Первая</a></li>
+    <li><a href="<?php echo $pg2 ?>">Вторая</a></li>
+</ul>
 </body>
 </html>
